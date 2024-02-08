@@ -1,0 +1,41 @@
+public class MangosNaranjas {
+    private int mangos;
+    private int naranjas;
+    private int cajas;
+    private int mangosXCaja;
+    private int naranjasXCaja;
+
+    public MangosNaranjas(int mangos, int naranjas) {
+        this.mangos = mangos;
+        this.naranjas = naranjas;
+        this.cajas = 0;
+        this.mangosXCaja = 0;
+        this.naranjasXCaja = 0;
+    }
+
+    private void numeroDeCajas() {
+        this.cajas = mcd(mangos, naranjas);
+    }
+
+    private void numeroDeMangos() {
+        this.mangosXCaja = this.mangos / this.cajas;
+    }
+
+    private void numeroDeNaranjas() {
+        this.naranjasXCaja = this.naranjas / this.cajas;
+    }
+
+    private int mcd(int num1, int num2) {
+        int modulo = 0;
+        return modulo;
+    }
+
+    public void imprimir() {
+        this.numeroDeCajas();
+        this.numeroDeNaranjas();
+        this.numeroDeMangos();
+        System.out.println("El número de cajas es " + this.cajas);
+        System.out.println("El número de mangos en una caja es: " + this.mangosXCaja);
+        System.out.println("El número de naranjas en una caja es: " + this.naranjasXCaja);
+    }
+}
